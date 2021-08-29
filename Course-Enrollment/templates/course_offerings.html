@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course Offerings</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css"/>
+</head>
+<body>
+<div class="container-fluid text-center top-container"><img src="/static/uta-logo-200.png"></div>
+<div class="container">
+    <header>
+        <nav>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="" class="nav-link active">Classes</a></li>
+                <li class="nav-item"><a href="/courses" class="nav-link">My Profile</a></li>
+            </ul>
+        </nav>
+        <hr style="clear:both">
+    </header>
+    <h1>Course Offerings</h1>
+
+    <!--  Display the Term and Year here --->
+    <!---<h3>Term: Fall 2019</h3>--->
+
+    <div>
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th scope="col">Course ID</th>
+                <th scope="col">Title</th>
+                <th scope="col">Description</th>
+                <th scope="col">Credits</th>
+                <th scope="col">Enroll</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            <!-- Construct the rest of courses here -->
+            <form action="/enroll" method="post">
+            <tr>
+                <td scope='row'>1111</td>
+                <td>PHP</td>
+                <td>Intro to PHP</td>
+                <td>3</td>
+                <td>
+                    <button type="submit" class="signupbtn">Enroll</button>
+                </td>
+            </tr>
+                <input type="hidden" name="courseID" value="1111">
+                <input type="hidden" name="title" value="PHP">
+                <input type="hidden" name="credit" value="3">
+                </form>
+            <form action="/enroll" method="post">
+            <tr>
+                <td scope='row'>2222</td>
+                <td>Java</td>
+                <td>Intro to Java Programming</td>
+                <td>4</td>
+                <td>
+                    <button type="submit" class="signupbtn">Enroll</button>
+                </td>
+            </tr>
+                <input type="hidden" name="courseID"  value="2222">
+                <input type="hidden" name="title" value="Java">
+                <input type="hidden" name="credit" value="4">
+                </form>
+            <form action="/enroll" method="post">
+            <tr>
+                <td scope='row'>3333</td>
+                <td>Python</td>
+                <td>Python Programming</td>
+                <td>3</td>
+                <td>
+                    <button type="submit" class="signupbtn">Enroll</button>
+                </td>
+            </tr>
+                <input type="hidden" name="courseID" value="3333">
+                <input type="hidden" name="title" value="Python">
+                <input type="hidden" name="credit" value="3">
+                </form>
+            <form action="/enroll" method="post">
+            <tr>
+                <td scope='row'>4444</td>
+                <td>Angular</td>
+                <td>Intro to Angular</td>
+                <td>3</td>
+                <td>
+                    <button type="submit" class="signupbtn">Enroll</button>
+                </td>
+            </tr>
+                <input type="hidden" name="courseID" value="4444">
+                <input type="hidden" name="title" value="Angular">
+                <input type="hidden" name="credit" value="3">
+                </form>
+            <form action="/enroll" method="post">
+            <tr>
+                <td scope='row'>5555</td>
+                <td>C++</td>
+                <td>C++ Programming</td>
+                <td>4</td>
+                <td>
+                    <button type="submit" class="signupbtn">Enroll</button>
+                </td>
+            </tr>
+                <input type="hidden" name="courseID" value="5555">
+                <input type="hidden" name="title" value="C++">
+                <input type="hidden" name="credit" value="4">
+                </form>
+            <!-------------------------------------->
+
+            </tbody>
+        </table>
+
+    </div>
+
+
+</div>
+
+</body>
+</html>
